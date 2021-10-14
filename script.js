@@ -18,7 +18,7 @@ fetch(`https://ghibliapi.herokuapp.com/films`)
     let selectedMovie;
 
     //loop through movie object and give specific details based on chosen movie
-    dropDown.addEventListener("change", () => {
+    dropDown.addEventListener("change", (event) => {
       for (let movie of movies) {
         if (dropDown.value === movie.title) {
           selectedMovie = movie;
